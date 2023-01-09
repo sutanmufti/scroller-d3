@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="./app/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./app/modules/bootstrap/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="./app/style.css">
+    
+
+    <script src="./app/modules/d3.v7.min.js"></script>
+    <script src="./app/data/data.js"></script>
+    
 </head>
 <body>
     <div id = 'leftcontainer' class="center">
         <div id="leftbutton">
-            <p>button1</p>
+            <button onclick="clickeeeed()">Click me</button>
             <p>button2</p>
             <p>button3</p>
         </div>
@@ -21,27 +26,53 @@
     </div>
     <main id="main">
         <div id="article">
-            <section>
+            <section class="step">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in sem ac lectus egestas gravida. Sed tincidunt nunc massa, vel pretium ligula fringilla at. Nullam eget libero dolor. Nulla non velit vel leo lacinia placerat in quis elit. Vivamus at nisi eu magna luctus aliquam a non justo. Donec eget eleifend libero, at facilisis diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris leo sapien, maximus sit amet cursus in, sollicitudin sed urna. Pellentesque bibendum, nibh in egestas dignissim, est nunc pulvinar sem, scelerisque cursus sapien neque non orci. Praesent iaculis scelerisque enim eleifend varius. Morbi consequat aliquam urna, quis viverra quam porttitor et. Maecenas non aliquet mi, sit amet porttitor sem. Proin ut risus enim. Nulla mollis scelerisque sem et tristique.
             </section>
-            <section>
+            <section class="step">
                 Morbi in varius lectus, quis scelerisque ex. Nulla vel magna vestibulum felis rhoncus suscipit a vehicula nisi. Phasellus porttitor sagittis interdum. Nunc sem nunc, dignissim vitae erat vel, congue consectetur sem. Integer feugiat consectetur ullamcorper. Praesent aliquam nibh a porttitor posuere. Fusce laoreet commodo efficitur.
             </section>
-            <section>
+            <section class="step">
                 In sed enim accumsan, tempus mi at, placerat quam. Etiam finibus ligula a diam feugiat tincidunt. Sed eros eros, viverra ut gravida egestas, pulvinar sed est. Nam rhoncus, justo vel vulputate posuere, diam dui pellentesque mi, ac feugiat nibh quam sed lacus. Aenean lacinia vitae augue ut commodo. Ut vel blandit elit, ac faucibus nibh. Donec eget risus quam. Nulla facilisi. Integer sodales felis ligula, quis lacinia mauris fringilla et. Suspendisse non posuere augue, in euismod est. Vivamus sit amet lacinia libero, eu ultricies urna.
             </section>
-            <section>
+            <section class="step">
                 Phasellus suscipit risus vitae posuere fringilla. Aliquam ac congue velit, a faucibus mauris. Vestibulum venenatis consectetur mauris, sit amet molestie ex finibus sed. Aenean interdum lectus urna, maximus hendrerit lacus tincidunt a. Cras ac quam vitae dolor volutpat commodo a nec elit. Fusce et tortor a ante efficitur placerat. Cras sed ipsum ultricies, accumsan nisl quis, luctus orci. In viverra in orci id sollicitudin.
             </section>
-            <section>
+            <section class="step">
                 Sed id tortor quis nunc semper fringilla. Maecenas sed blandit nisl. Donec quis placerat odio. Sed vulputate lorem eros. Duis non imperdiet purus. Mauris eleifend quam nisi, vel luctus est mattis hendrerit. Nunc vitae commodo sem. Vivamus sit amet augue eros. Aliquam sit amet turpis ac enim hendrerit imperdiet. Nulla sem diam, pharetra ut blandit quis, vestibulum at diam.
             </section>
         </div>
         <div id="graph">
-            this is the graph <span id="sectionindicator"></span>
+            <div>
+
+                this is the graph <span id="sectionindicator"></span>
+            </div>
+            <div>
+                <svg class="chart" width="550" height="550">
+                    <g transform="translate(0,0)">
+                        <rect width="50" height="19"></rect>
+                        <text x="47" y="9.5" dy=".35em">5</text>
+                    </g>
+                    <g transform="translate(0,20)">
+                        <rect width="100" height="19"></rect>
+                        <text x="97" y="9.5" dy=".35em">10</text>
+                    </g>
+                    <g transform="translate(0,40)">
+                        <rect width="120" height="19"></rect>
+                        <text x="117" y="9.5" dy=".35em">12</text>
+                    </g>
+                </svg>
+
+            </div>
         </div>
     </main>
+    <div id="demo">
 
-    <script src="./app/script.js"></script>
+    </div>
+    <!-- <button onclick="click()">click!</button> -->
+    <script src="./app/script.js" ></script>
+
+    
+    
 </body>
 </html>
