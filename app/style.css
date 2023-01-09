@@ -4,6 +4,9 @@ body {
     max-width: 1600px;
     max-height: 100vh;
     background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 #main {
     width: 80%;
@@ -11,6 +14,7 @@ body {
     margin: auto;
     /* border: 1px solid black; */
     justify-content: center;
+    /* display: inline-block; */
 }
 
 #article {
@@ -39,3 +43,27 @@ body {
 section {
     margin-bottom: 180px;
 }
+
+#leftbutton {
+    background-color: bisque;
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+    position: relative;
+    right: 0;
+    bottom:0;
+    margin-right:10px;
+}
+
+#leftcontainer { 
+    /* background-color: rgb(224, 177, 177); */
+    display: inline-block;
+    flex-grow: 1;
+    position: relative;
+    right: 0;
+    text-align: right;
+}
+
+.center {
+    margin: auto;
+  }
