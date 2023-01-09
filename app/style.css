@@ -1,0 +1,40 @@
+body {
+    width: 1600px;
+    height: 100vh;
+    max-width: 1600px;
+    max-height: 100vh;
+}
+#main {
+    width: 1200px;
+    height: 00100%;
+    margin: auto;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+
+#article {
+    /* border: 1px solid black; */
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 60px 60px 0 60px;
+    overflow: auto;
+}
+
+#graph {
+    /* border: 1px solid black; */
+    margin: 0 0 0 20px;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    padding: 60px 60px 0 60px;
+    overflow: auto;
+    position: relative;
+    box-shadow: 0 0 20px 0px grey;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 180px;
+}
