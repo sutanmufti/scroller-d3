@@ -1,84 +1,49 @@
 body {
-    width: 1400px;
-    height: 100vh;
-    max-width: 1600px;
-    max-height: 100vh;
     background-color: bisque;
-    display: flex;
+    overflow-x: hidden;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+main {
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
     margin: auto;
-}
-#main {
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    /* border: 1px solid black; */
-    justify-content: center;
-    /* display: inline-block; */
+    width: 1000px;
+    border: 1px solid black;
 }
 
-#article {
-    /* border: 1px solid black; */
-    width: 30%;
-    height: 100%;
-    display: inline-block;
-    margin: 0;
-    padding: 60px 60px 0 20px;
-    overflow: auto;
-}
-
-#graph {
-    /* border: 1px solid black; */
-    margin: 0 0 0 20px;
-    width: 60%;
-    height: 100%;
-    display: inline-block;
-    padding: 60px 60px 0 60px;
-    overflow: auto;
+#paragraph {
     position: relative;
-    /* box-shadow: 0 0 20px 0px grey; */
-    background-color: bisque;
-}
-
-section {
-    margin-bottom: 180px;
-}
-
-#leftbutton {
-    background-color: bisque;
     display: inline-block;
-    width: 80px;
-    height: 100%;
-    position: relative;
-    right: 0;
-    bottom:0;
-    margin-right:10px;
+    width: 400px;
+    top: 100px;
+    z-index: 90;
+    margin-right: 50px;
 }
 
-#leftcontainer { 
-    /* background-color: rgb(224, 177, 177); */
+#vis {
     display: inline-block;
-    flex-grow: 1;
-    position: relative;
-    right: 0;
-    text-align: right;
+    position: fixed;
+    top: 100px;
+    /* right: 0px; */
+    z-index: 1;
+    margin-left: 0;
+    height: 300px;
+    width: 300px;
+    background-color: blue;
 }
 
-.center {
-    margin: auto;
-  }
-
-svg rect {
-    fill: orange;
-}
-
-svg text {
-    fill:white;
-    font: 10px sans-serif;
-    text-anchor: end;
-}
-
-svg {
-    border: 1px solid black 
+.step {
+    margin-bottom: 75px;
+    height: 600px;
+    font-family: "Domine";
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: justify;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
 }
