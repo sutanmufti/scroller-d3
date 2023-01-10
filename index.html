@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./app/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./app/modules/bootstrap/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="./app/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
     
 
     <script src="./app/modules/d3.v7.min.js"></script>
@@ -21,6 +27,7 @@
 
             <section class="step">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac quam condimentum, eleifend nibh quis, imperdiet massa. In fermentum, enim ac feugiat rutrum, urna magna tristique leo, ac convallis arcu tortor non lectus. Suspendisse sed finibus ligula, at ornare felis. Mauris cursus commodo cursus. Etiam facilisis fringilla nisi, ac rutrum magna elementum sed. Etiam nec massa id felis ultricies dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel lectus est.
+                <button onclick="showHide()"> show</button>
             </section>
             <section class="step">
                 Cras id tincidunt augue, sit amet faucibus mi. Sed tortor justo, interdum ac arcu in, tincidunt scelerisque turpis. Aenean sodales turpis in consectetur ullamcorper. Sed a libero eu mauris imperdiet finibus sit amet eget est. Mauris quam turpis, laoreet quis sollicitudin blandit, rhoncus eget eros. Cras aliquet ex ac purus luctus feugiat. Maecenas congue nibh diam, quis interdum est congue vitae. Nunc pretium, sem eu laoreet dapibus, magna enim viverra turpis, at accumsan tellus quam eget diam. In nibh justo, tincidunt at tortor ac, scelerisque placerat nibh. Nulla accumsan hendrerit urna sit amet placerat. Mauris blandit dolor quis arcu egestas suscipit. Nulla facilisi. Quisque a sagittis erat, in pharetra lorem. Maecenas aliquet a velit nec elementum. Donec aliquet, dui eget aliquet tincidunt, est leo tincidunt mi, sed cursus velit purus sed odio.
@@ -43,6 +50,9 @@
             <svg>
 
             </svg>
+            
+        </div>
+        <div id="map">
         </div>
     </main>
         
